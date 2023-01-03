@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+#logo {
+   margin-top: 1%;
+    margin-left: 2%;
+    position:relative;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 0.7rem;
+    border:0.2em solid;
+    border-color:rgb(238, 243, 243);
+}
+#header_div{
+    position:absolute;
+    margin-top: 1.5%;
+    margin-left: 2%;
+    height: 3.5rem;
+    width: 85%;
+    background-color: #3CC1FB;
+    border-radius: 0.7rem;
+    display: inline-block;
+}
+#profile{
+    color: white;
+    /* float: right; */
+    height: 1.6rem;
+    /* margin:1.3% 2% 0 0; */
+}
+
+#wallet{
+  height: 1.6rem; 
+  float: right;
+  color: white;
+  margin: 9px;
+  padding: 7px;
+}
+.menu a{
+   
+    color: white;
+    text-decoration:none;
+    margin: 9px 8px 0 8px;
+    text-align: center;
+    /* display: inline-block; */
+    float: right;
+    font-size:larger;
+    font-family: 'Secular One', sans-serif;
+    padding: 7px;
+  }
+  #categories{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    font-family: 'Secular One', sans-serif;
+    padding: 7px;
+  }
+  
+  a:link:active, a:visited:active {
+    color: (green);
+  }
+
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    /* display: inline-block; */
+    color: white;
+    float: right;
+    height: 1.6rem;
+    margin:1.3% 2% 0 0;
+  }
+  .dropbtn {
+   background-color: #3CC1FB;
+    border: none;
+  }
+  .dropbtn-2{
+    background-color: #3CC1FB;
+     border: none;
+   }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  
+ #categories:hover{
+  
+  background-color:#3eacdb;
+  border-radius: 10px;
+ }
+ .menu a:hover:hover{
+  
+  background-color:#3eacdb;
+  border-radius: 10px;
+ }
+ .dropbtn:hover{
+  
+  background-color:#3eacdb;
+  border-radius: 100px;
+
+ }
+ #wallet:hover{
+  background-color:#3eacdb;
+  border-radius: 100px;
+  
+ }
