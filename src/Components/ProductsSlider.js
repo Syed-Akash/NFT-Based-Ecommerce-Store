@@ -6,6 +6,7 @@ import './ProductsSlider.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { upload } from '@testing-library/user-event/dist/upload';
 function ProductsSlider(){
   const responsive = {
     superLargeDesktop: {
@@ -64,7 +65,7 @@ function ProductsSlider(){
                         
                           <div className="slide-img">
                             
-                              <img src={product.img} alt="1"></img>
+                              <img src={`./upload/${product.img}`} alt="1"></img>
                               <div className='overlay'>
                                   <span className='buy-btn'>Buy Now</span>
                               </div>
@@ -74,7 +75,7 @@ function ProductsSlider(){
                                   <span>{product.name}</span>
                                   <span>New Arrival</span>
                               </div>
-                              <span  className="price">{product.price}</span>
+                              <span  className="price">{product.price}$</span>
                                 
                           </div>
                           </Link>

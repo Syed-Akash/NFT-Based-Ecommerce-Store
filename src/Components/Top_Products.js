@@ -52,7 +52,7 @@ function Top_Products(){
                         <Link to={`/Product/${product.idproducts}`}>
                           <div className="slide-img-2">
                             
-                              <img src={product.img} alt="1"></img>
+                              <img src={`./upload/${product.img}`} alt="1"></img>
                               <div className='overlay-2'>
                                   <span className='buy-btn-2'>Buy Now</span>
                               </div>
@@ -62,7 +62,7 @@ function Top_Products(){
                                   <span>{product.name}</span>
                                   <span>New Arrival</span>
                               </div>
-                              <span className="price-2">{product.price}</span>
+                              <span className="price-2">{product.price}$</span>
                                  
                           </div>
                           </Link>
@@ -192,7 +192,7 @@ function Top_Products(){
                       <div className="box-2">
                       <Link to={`/Product/${product.idproducts}`}>
                           <div className="slide-img-2">
-                              <img src={product.img} alt="1"></img>
+                              <img src={`./upload/${product.img}`} alt="1"></img>
                               <div className='overlay-2'>
                                   <span className='buy-btn-2'>Buy Now</span>
                               </div>
@@ -202,7 +202,7 @@ function Top_Products(){
                                   <span>{product.name}</span>
                                   <span>New Arrival</span>
                               </div>
-                              <span className="price-2">{product.price}</span>
+                              <span className="price-2">{product.price}$</span>
                                   
                           </div>
                           </Link>

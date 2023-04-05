@@ -32,13 +32,13 @@ const Products=() =>{
         
         <div className='product' key={product.idproducts}>
         <div className='small'>
-        <img className="small-img" src={product.img} alt='product-1'/>
-        <img className="small-img" src={product.img} alt='product-1'/> 
-        <img className="small-img" src={product.img} alt='product-1'/>
-         <img className="small-img" src={product.img} alt='product-1'/>
+        <img className="small-img" src={`../upload/${product.img}`} alt='product-1'/>
+        <img className="small-img" src={`../upload/${product.img}`} alt='product-1'/> 
+        <img className="small-img" src={`../upload/${product.img}`} alt='product-1'/>
+         <img className="small-img" src={`../upload/${product.img}`} alt='product-1'/>
         </div>
         <div className='big'>
-            <img className='big-img' src={product.img} alt='product-1'/>
+            <img className='big-img' src={`../upload/${product.img}`} alt='product-1'/>
         </div>
         <div className='details'>
             <h2>About Product</h2>

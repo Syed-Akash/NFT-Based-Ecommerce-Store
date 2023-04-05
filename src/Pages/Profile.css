@@ -1,13 +1,13 @@
 .details-container{
     display: flex;
-    gap: 100px;
+    gap: 80px;
     margin-top: 40px;
     justify-content: center;
 }
 .p-det{
     background-color:white;
-    height: 150px;
-    width: 350px;
+    height: 140px;
+    width: 310px;
     border-radius: 30px;
     text-align:center;
     padding: 17px 0;
@@ -17,4 +17,70 @@ h4{
     background-color: #3CC1FB;
     border-radius: 10px;
     color: white;
+    
 }
+h3{
+    font-size: medium;
+    
+}
+.b-hist{
+    margin: 40px 60px 20px 60px;
+    text-align: center;
+    
+}
+#p-table{
+    
+    width: 100%;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+    
+}
+#p-table th:first-child{
+    width: 5%;
+}
+#p-table th:nth-child(2){
+    width: 50%;
+}
+#p-table th:nth-child(3){
+    width: 10%;
+}
+#p-table th:nth-child(4){
+    width: 10%;
+}
+th:nth-child(5){
+    width: 10%;
+}
+th:nth-child(6){
+    width: 10%;
+}
+#p-table td:first-child{
+    width: 5%;
+}
+#p-table td:nth-child(2){
+    width: 50%;
+}
+#p-table td:nth-child(3){
+    width: 10%;
+}
+#p-table td:nth-child(4){
+    width: 10%;
+}
+#p-table td:nth-child(5){
+    width: 10%;
+}
+#p-table td:nth-child(6){
+    width: 10%;
+}
+#p-table th{
+    background-color: #3CC1FB;
+    color: aliceblue;
+}
+.a-p{
+    margin: 20px 0px 20px 60px;
+    text-decoration: none;
+}
+.add-pro{
+    text-decoration: none;
+    color: aliceblue;
+}
+

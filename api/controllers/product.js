@@ -1,4 +1,5 @@
 import {db} from '../db.js'
+import jwt from "jsonwebtoken";
 export const getProducts = (req,res)=>{
     const q = req.query.cat ? "SELECT * FROM products WHERE cat=?" 
     : "SELECT * FROM products";
@@ -17,7 +18,25 @@ export const getProduct = (req,res)=>{
     })
 }
 export const addProduct = (req,res)=>{
-    res.json("from controller")
+    const token = req.cookies.access_token;
+    if(!token) return res.status(401).json("Not Authenticated")
+    jwt.verify(token,"jwtkey",(err, userInfo)=>{
+        if (err) return res.status(403).json("Token is not Valid!");
+       
+    const q = "INSERT INTO products(`name`, `description`, price, `cat`, `img`, `sid`) VALUES (?)"
+    const values = [
+        req.body.name,
+        req.body.description,
+        req.body.price,
+        req.body.cat,
+        req.body.img,
+        userInfo.id
+    ]
+    db.query(q, [values], (err, data) => {
+        if (err) return res.status(500).json(err);
+        return res.json("Product has been added.");
+      });
+    })
 }
 export const deleteProduct = (req,res)=>{
     res.json("from controller")

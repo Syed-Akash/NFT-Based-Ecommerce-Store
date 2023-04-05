@@ -124,3 +124,27 @@
   border-radius: 100px;
   
  }
+ .walletConnected{
+  height: 1.6rem; 
+  float: right;
+  color: white;
+  margin: 9px;
+  padding: 7px;
+ }
+ .walletConnectedImg{
+  height: 2.4rem; 
+  float: right;
+  color: white;
+  border-radius: 100%;
+  margin: -6px 0 5px 10px;
+  
+ }
+ .disconnectWallet{
+  border: none;
+  color: white;
+  background-color: #3eacdb;
+  position: absolute;
+  text-decoration: none;
+  margin: 14px 0 0 13px;
+
+ }

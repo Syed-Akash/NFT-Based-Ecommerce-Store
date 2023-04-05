@@ -14,7 +14,7 @@
     text-decoration: none;
   }
   .box-2{
-      width: 164px;
+      width: 180px;
       box-shadow: 1px 2px 10px rgba(0,0,0,0.2);
       border-radius: 10px;
       overflow: hidden;
@@ -23,7 +23,7 @@
   
   }
   .slide-img-2{
-      height: 120px;
+      height: 150px;
       position: relative;
   }
   .slide-img-2 img{
